@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>My Profile - Spotify Clone</title>
+</head>
+<body>
+    <header>
+        <h1>My Spotify Clone</h1>
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        header {
+            background-color: #1DB954;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .user-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #168f3a;
+        }
+        </style>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <!-- Add more sidebar links as needed -->
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="profile-container">
+                <h2>My Profile</h2>
+                <div class="user-info">
+                    <img src="user-avatar.jpg" alt="User Avatar">
+                    <div>
+                        <p><strong>Username:</strong> demo_user</p>
+                        <p><strong>Email:</strong> demo_user@example.com</p>
+                        <!-- Add more user information as needed -->
+                    </div>
+                </div>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script>function logout() {
+        // Placeholder for logout logic
+        alert("Logout successful!");
+        // Redirect or perform further actions after logout
+        window.location.href = "login.html";
+    }
+    </script>
+</body>
+</html>
